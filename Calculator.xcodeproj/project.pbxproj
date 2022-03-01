@@ -14,7 +14,6 @@
 		3B2E211D26B1E1620079B446 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B2E211C26B1E1620079B446 /* Preview Assets.xcassets */; };
 		3B4BB7BB27664E5100729F5E /* Palette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B4BB7BA27664E5100729F5E /* Palette.swift */; };
 		3B58E39926B1F20D000320D0 /* CalcButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B58E39826B1F20D000320D0 /* CalcButton.swift */; };
-		3BEE966627CE576800BB84CB /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 3BEE966527CE576800BB84CB /* screenshot.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,8 +26,8 @@
 		3B2E211E26B1E1620079B446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3B4BB7BA27664E5100729F5E /* Palette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Palette.swift; sourceTree = "<group>"; };
 		3B58E39826B1F20D000320D0 /* CalcButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalcButton.swift; sourceTree = "<group>"; };
-		3BEE966527CE576800BB84CB /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = screenshot.png; path = ../../screenshot.png; sourceTree = "<group>"; };
 		3BEE966727CE578900BB84CB /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3BEE966827CE591700BB84CB /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,7 +45,7 @@
 			isa = PBXGroup;
 			children = (
 				3BEE966727CE578900BB84CB /* README.md */,
-				3BEE966527CE576800BB84CB /* screenshot.png */,
+				3BEE966827CE591700BB84CB /* screenshot.png */,
 				3B2E211426B1E1620079B446 /* Calculator */,
 				3B2E211326B1E1620079B446 /* Products */,
 			);
@@ -141,7 +140,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B2E211D26B1E1620079B446 /* Preview Assets.xcassets in Resources */,
-				3BEE966627CE576800BB84CB /* screenshot.png in Resources */,
 				3B2E211A26B1E1620079B446 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
