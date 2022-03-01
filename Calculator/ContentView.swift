@@ -1,5 +1,14 @@
 import SwiftUI
 
+// TODO: Implement 3 different views for
+// - Portrait mode (could be the same for slide over)
+// - Landscape mode
+// - Slide over mode
+// The reason is that we are depending
+// too much on `CGFloat(calcSize(geo.size.width))`
+
+// TODO: Implement keyboard support
+
 struct ContentView: View {
     func calcSize(_ size: CGFloat) -> Int {
         print(size)
