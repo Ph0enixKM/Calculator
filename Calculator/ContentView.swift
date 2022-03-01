@@ -1,16 +1,47 @@
-//
-//  ContentView.swift
-//  Calculator
-//
-//  Created by Paweł Karaś on 28/07/2021.
-//
-
 import SwiftUI
 
 struct ContentView: View {
+    func calcSize(_ size: CGFloat) -> Int {
+        print(size)
+        if size < 400 {
+            return 80
+        }
+        else if size < 1000 {
+            return 140
+        }
+        return 110
+    }
+    
+    func gridLayout(_ size: CGFloat) -> Array<GridItem> {
+        return Array(
+            repeating: GridItem(
+                .flexible(maximum: CGFloat(calcSize(size))),
+                alignment: .leading
+            ),
+            count: 4
+        )
+    }
+
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        GeometryReader { geo in
+            VStack {
+                Spacer()
+                Text("0").font(.system(size: CGFloat(calcSize(geo.size.width)) / 2))
+                HStack {
+                    Spacer()
+                    LazyVGrid (columns: gridLayout(geo.size.width), spacing: 10) {
+                        ForEach (ButtonController().buttons, id: \.self.0) {(name, type) in
+                            CalcButton(
+                                name: name,
+                                type: type,
+                                size: calcSize(geo.size.width)
+                            )
+                        }
+                    }
+                    Spacer()
+                }
+            }.padding(geo.size.width / 40)
+        }
     }
 }
 
